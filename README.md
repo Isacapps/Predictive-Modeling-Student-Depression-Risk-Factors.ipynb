@@ -1,5 +1,6 @@
 Predictive Analysis of Mental Health Determinants in Student Populations
-Abstract
+
+Abstract   
 This research project implements a supervised machine learning framework to identify and classify depression risk factors among students. By analyzing a dataset of over 27,000 observations, the study explores the intersection of academic pressure, socio-economic status, and lifestyle habits to provide a data-driven perspective on student well-being.
 
 Research Objectives
