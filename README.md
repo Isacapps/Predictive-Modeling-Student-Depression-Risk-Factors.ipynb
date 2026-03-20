@@ -22,11 +22,14 @@ To ensure the integrity of the statistical inference, a comprehensive preprocess
 - Outlier Mitigation: Statistical filtering of non-physiological values in continuous features (e.g., Age and Study Hours) to reduce model variance.
 - Feature Scaling: Standardizing numerical inputs to a uniform scale, preventing magnitude bias during algorithmic training.
 - Target Encoding: Harmonizing the 'Depression' label for binary classification tasks.
+- Model Validation & Diagnostic: Implementation of Confusion Matrices across all classifiers to provide a granular breakdown of True Positives and False Negatives, ensuring the clinical reliability of the predictions.
 
 Technical Framework
 - Language: Python 
 - Key Libraries: Pandas (Data Manipulation), Scikit-Learn (Machine Learning), Seaborn & Matplotlib (Exploratory Data Analysis).
-- Evaluation Metrics: Focus on Recall and F1-Score to minimize false negatives, ensuring that at-risk individuals are not overlooked by the model.
+- Evaluation Metrics: Performance Metrics: While accuracy was monitored, the primary optimization focused on Recall and F1-Score.
+     - Recall Optimization: Critical for clinical screening to minimize Type II errors (False Negatives), ensuring that students at risk of depression are                correctly identified.
+     - Confusion Matrix Analysis: Used as the primary diagnostic tool to evaluate the trade-off between sensitivity and specificity for each implemented model.
 
 Project Deliverables
 - Analysis Notebook: Python implementation of the end-to-end ML pipeline.
